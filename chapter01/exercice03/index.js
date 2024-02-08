@@ -13,5 +13,5 @@ let str2 = str.toString().split('').reverse().join('')
 }
 
 export function countVowels(str) {
-    return str.match(/[aeiou]/gi).length;
+    return str.match(/[aeiouy]/gi).length;
 }
