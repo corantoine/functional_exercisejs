@@ -1,20 +1,23 @@
 export function addWithCallback(a, b, callback) {
   setTimeout(() => {
-  },
-let sum = a + b ;
-callback(sum)
+    callback(a+b);
+   },
 1000);
 }
 
 export function filterArrayWithCallback(array, filterFunc, callback) {
   setTimeout(() => {
+callback (array.filter(filterFunc))
   }, 1000);
 }
 
 export async function asyncAdd(a, b) {
-  setTimeout(() => {
-
+  return new Promise((resolve, reject)=> 
+  { setTimeout(() => {
+const result = a + b;
+resolve(result);
   }, 1000);
+});
 }
 
 export async function filterArrayAsync(array, filterFunc) {
