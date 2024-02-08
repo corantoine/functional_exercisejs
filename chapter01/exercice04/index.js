@@ -1,6 +1,9 @@
 export function addWithCallback(a, b, callback) {
   setTimeout(() => {
-  }, 1000);
+  },
+let sum = a + b ;
+callback(sum)
+1000);
 }
 
 export function filterArrayWithCallback(array, filterFunc, callback) {
